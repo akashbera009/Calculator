@@ -28,6 +28,7 @@ body {
 }
 
 .displayItems {
+    overflow: hidden;
     font-family: 'Orbitron', sans-serif;
     color: aliceblue;
     height: 7.5rem;
@@ -42,6 +43,7 @@ body {
     top:3vh;
 }
 .result{
+    overflow: hidden;
     font-family: 'Orbitron', sans-serif;
     color: aliceblue;
     height: 7.5rem;
@@ -53,12 +55,17 @@ body {
     padding: 1rem; /* Add some padding */
     box-sizing: border-box; /* Ensure padding doesn't affect width */
     position: relative;
-    top: -15vh;
+    top: -17.5vh;
     right:0vh;
     display: flex;
     align-items: center;
     justify-content: right;
     /* background-color: rgb(110, 78, 78); */
+}
+@media (min-width:350px) and (max-width:850px) {
+    .result{
+        top: -15vh;
+    }
 }
 .display_none{
     visibility: hidden;
